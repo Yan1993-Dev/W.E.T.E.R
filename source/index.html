@@ -22,63 +22,68 @@
     <!-- endbuild -->
   </head>
   <body>
-    <div class="container hero">
-      <div class="news">
-        <div class="news__wrap">
-          <img src="./img/logo.svg" alt="bun company W.E.T.E.R">
-          <img src="./img/logo-text.svg" alt="bun company W.E.T.E.R">
-        </div>
-        <div class="news__hero">
-          <p>06 Дек. 16:24</p>
-        </div>
-        <div class="news__info">
-          <h2 class="news__info-title">Бизнес-встреча в Дубаи</h2>
-          <ul class="news__info-list">
-            <li class="news__info-item undotted"><a href="#" class="news__info-link">18k</a></li>
-            <li class="news__info-item undotted"><a href="#" class="news__info-link">3974</a></li>
-            <li class="news__info-item undotted"><a href="#" class="news__info-link">Читать</a></li>
-          </ul>
-          <ul class="news__info-list">
-            <li class="news__info-item--bottom undotted"><a href="#" class="news__info-link">Пред.</a></li>
-            <li class="news__info-item--bottom undotted"><a href="#" class="news__info-link">Следующая</a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="container top__wrapper">
       <header class="header">
         <ul class="header__list">
-          <li class="header__list-item undotted"><a href="#" class="header__list-link">Главная страница</a></li>
+          <li class="header__list-item header__list-item--logo undotted"><a href="#" class="header__list-link"><img src="./img/logo.svg" alt="bun company W.E.T.E.R" class="header__list-img"></a></li>
+          <li class="header__list-item undotted"><a href="#" class="header__list-link"><img src="./img/logo-text.svg" alt="bun company W.E.T.E.R" class="header__list-img"></a></li>
+          <li class="header__list-item header__list-item--main undotted"><a href="#" class="header__list-link">Главная страница</a></li>
           <li class="header__list-item undotted"><a href="#" class="header__list-link">Автор</a></li>
           <li class="header__list-item undotted"><a href="#" class="header__list-link">Кабинет инвестора</a></li>
           <li class="header__list-item undotted"><a href="#" class="header__list-link">RU</a></li>
         </ul>
       </header>
-    </div>
-    <main>
-      <section class="container banner">
-        <p class="banner__text">W.E.T.E.R</p>
-        <h1 class="banner__title">Wind Energy Technology
-          Era Renewable</h1>
-        <p class="banner__subtext">Здание, способное обеспечить себя электрической энергией с помощью ветра</p>
-        <div class="banner__play">
-          <a href="https://www.youtube.com/watch?v=URt5RjFAYaA&list=TLGG7E_F9DtfyJAxOTA2MjAyMw"><img src="./img/play.svg" alt=""></a>
-          <ul class="banner__play-list">
-            <li class="banner__play-item"><p class="banner__play-text">Видео-презентация проекта</p></li>
-            <li class="banner__play-item"><p class="banner__play-text">09:12</p></li>
-          </ul>
+      <section class="main">
+        <div class="news">
+          <div class="news__hero">
+            <p class="news__hero-text">06 Дек. 16:24</p>
+            <img src="./img/tangonan.png" alt="" class="news__hero-img">
+          </div>
+          <div class="news__info">
+            <a href="#" class="news__info-title">Бизнес-встреча в Дубаи</a>
+            <ul class="news__info-list">
+              <li class="news__info-item undotted"><img src="./img/eye.svg" alt="" class="news__info-img"><a href="#" class="news__info-link">18k</a></li>
+              <li class="news__info-item undotted"><img src="./img/heart.svg" alt="" class="news__info-img"><a href="#" class="news__info-link">3974</a></li>
+              <li class="news__info-item undotted"><a href="#" class="news__info-link news__info-link--read">Читать ›</a></li>
+            </ul>
+            <ul class="news__info-list--nav">
+              <li class="news__info-item--prev undotted"><a href="#" class="news__info-link news__info-link--prev">Пред.</a></li>
+              <li class="news__info-item--next undotted"><a href="#" class="news__info-link">Следующая ›</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="banner__social">
-          <a href="#"><img src="./img/tg.svg" alt=""></a>
-          <a href="#"><img src="./img/inst.svg" alt=""></a>
+        <div class="banner">
+          <div class="banner__top">
+            <p class="banner__text">W.E.T.E.R</p>
+            <h1 class="banner__title">Wind Energy Technology
+              Era Renewable</h1>
+            <p class="banner__subtext">Здание, способное обеспечить себя электрической энергией с помощью ветра</p>
+            <div class="banner__play">
+              <a href="https://www.youtube.com/watch?v=URt5RjFAYaA&list=TLGG7E_F9DtfyJAxOTA2MjAyMw"><img src="./img/play.svg" alt=""></a>
+              <ul class="banner__play-list">
+                <li class="banner__play-item undotted"><p class="banner__play-text">Видео-презентация проекта</p></li>
+                <li class="banner__play-item undotted"><p class="banner__play-text banner__play-text--time">09:12</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="banner__social">
+            <a class="banner__social-link" href="#"><img src="./img/tg.svg" alt=""></a>
+            <a class="banner__social-link" href="#"><img src="./img/inst.svg" alt=""></a>
+          </div>
         </div>
       </section>
+    </div>
+    
+    <main>
+      
       <section class="demonstration">
         <h2 class="demonstration__title">Технология и инновации</h2>
         <ul class="demonstration__list">
-          <li class="demonstration__list-item">
+          <li class="demonstration__list-item undotted">
             <img src="./img/propeller.png" alt="" class="demonstration__list-img">
             <p class="demonstration__list-text">Моделирование воздушного потока</p>
           </li>
-          <li class="demonstration__list-item">
+          <li class="demonstration__list-item undotted">
             <img src="./img/building.png" alt="" class="demonstration__list-img">
             <p class="demonstration__list-text">Трехмерная визуализация</p>
           </li>
