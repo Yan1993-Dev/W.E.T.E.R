@@ -1,0 +1,90 @@
+
+.header {
+    position: relative;
+    padding-top: 26px;
+    z-index: 65;
+    &__list {
+        display: flex;
+        column-gap: 40px;
+        align-items: center;
+        @media (max-width: 950px) {
+            column-gap: 20px;
+        }
+        &-btn {
+            width: 25px;
+            height: 25px;
+            border: none;
+            background-image: url('../img/burger.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &--close {
+                background: none;
+                border: none;
+            }
+        }
+        &-item {
+            &--btn {
+                display: none;
+                @media (max-width: 800px) {
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+            &--main {
+                margin-left: auto;
+            }
+            &--logo {
+                margin-left: -28px;
+            }
+            &--hidden {
+                @media (max-width: 800px) {
+                    display: none;
+                }
+            }
+        }
+        &-link {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 48px;
+            color: #CECFDB;
+            @media (max-width: 1080px) {
+                font-size: 20px;
+            }
+            @media (max-width: 950px) {
+                font-size: 18px;
+            }
+        }
+        &-logo {
+        display: flex;
+        align-items: center;
+        margin-left: 24px;
+        padding-top: 96px;
+        margin-bottom: 11px;
+        column-gap: 8px;
+        }
+        &-img {
+            max-width: 70%;
+        }
+    }
+}
+
+
+.header-mobile__list {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: -500px;
+}
+
+.open {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    z-index: 10;
+    background: rgb(41 36 42 / 50%);
+    padding: 20px;
+    border-radius: 5px;
+}
