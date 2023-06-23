@@ -65,7 +65,10 @@
         column-gap: 8px;
         }
         &-img {
-            max-width: 70%;
+            max-width: 100%;
+            @media (max-width: 950px) {
+                max-width: 70%;
+            }
         }
     }
 }
