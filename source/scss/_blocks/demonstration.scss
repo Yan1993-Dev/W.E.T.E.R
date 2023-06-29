@@ -1,5 +1,8 @@
 
 .demonstration {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 184px;
     @media (max-width: 1300px) {
         margin-top: 94px;
@@ -40,6 +43,7 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        width: 50%;
         gap: 24px;
         &-item {
             position: relative;
@@ -58,6 +62,7 @@
         &-img {
             &--propeller {
                 margin-bottom: 70px;
+                max-width: 70%;
                 @media (max-width: 1200px) {
                     max-width: 350px;
                 }
@@ -76,52 +81,20 @@
             }
             &--dotted {
                 position: absolute;
-                left: 94%;
                 top: 43%;
-                width: 146%;
-                @media (max-width: 1080px) {
-                    width: 122%;
-                }
+                left: 80%;
+                width: 90%;
             }
             &--building {
-                @media (max-width: 1200px) {
-                    max-width: 210px;
-                }
-                @media (max-width: 1000px) {
-                    max-width: 178px;
-                }
-                @media (max-width: 800px) {
-                    max-width: 152px;
-                }
-                @media (max-width: 665px) {
-                    max-width: 126px;
-                }
-                @media (max-width: 424px) {
-                    max-width: 110px;
-                }
+                max-width: 66%;
             }
         }
         &-text {
+            text-align: center;
             font-size: 28px;
             font-weight: 700;
             line-height: 56px;
             letter-spacing: -2.4px;
-            @media (max-width: 800px) {
-                font-size: 22px;
-                letter-spacing: -1.4px;
-            }
-            @media (max-width: 665px) {
-                font-size: 18px;
-                line-height: 28px;
-                letter-spacing: -1px;
-            }
-            @media (max-width: 585px) {
-                font-size: 14px;
-                line-height: 20px;
-            }
-            @media (max-width: 424px) {
-                max-width: 134px;
-            }
         }
     }
     &__slide {
@@ -133,8 +106,6 @@
         margin-top: 88px;
         padding-left: 10%;
         padding-right: 10%;
-        margin-left: auto;
-        margin-right: auto;
         position: relative;
         width: 46.4%;
         &-track {
@@ -148,29 +119,15 @@
             height: 121px;
             left: calc(9.5% + 50px);
             width: 101px;
-            @media (max-width: 800px) {
-                left: calc(1.5% + 30px);
-            }
-            @media (max-width: 585px) {
-                height: 94px;
-            }
         }
         &-inner {
             position: absolute;
             display: flex;
             align-items: center;
         }
-        &-hexagon {
-            @media (max-width: 585px) {
-                width: 86px;
-            }
-        }
         &-finger {
             position: absolute;
             left: 31%;
-            @media (max-width: 585px) {
-                width: 40px;
-            }
         }
     }
 }
