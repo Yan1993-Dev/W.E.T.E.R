@@ -1,6 +1,8 @@
-
 .illustration {
+    max-width: 1920px;
     margin-top: 99px;
+    position: relative;
+    z-index: 50;
     &__list {
         display: flex;
         justify-content: center;

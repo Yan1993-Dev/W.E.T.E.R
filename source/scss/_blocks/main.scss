@@ -1,5 +1,6 @@
 
 .main {
+    max-width: 1920px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1, 150px);
@@ -19,9 +20,6 @@
     border: 1px solid #CECFDB;
     border-radius: 0px 0px 4px 4px;
     z-index: 55;
-    @media (max-width: 800px) {
-        display: none;
-    }
     &__hero {
         position: relative;
         padding-top: 96px;

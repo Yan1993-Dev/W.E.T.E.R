@@ -3,6 +3,7 @@
     position: relative;
     padding-top: 26px;
     z-index: 65;
+    max-width: 1920px;
     &__list {
         display: flex;
         column-gap: 40px;

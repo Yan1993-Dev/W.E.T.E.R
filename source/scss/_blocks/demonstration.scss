@@ -3,7 +3,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
     margin-top: 184px;
+    max-width: 1920px;
+    position: relative;
+    z-index: 50;
     @media (max-width: 1300px) {
         margin-top: 94px;
     }
